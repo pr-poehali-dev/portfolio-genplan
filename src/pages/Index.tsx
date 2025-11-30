@@ -818,47 +818,63 @@ const Index = () => {
               Технико-экономические показатели
             </h4>
             
-            <Card className="mb-8">
-              <CardContent className="p-6">
+            <Card className="mb-8 overflow-hidden">
+              <CardContent className="p-0">
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b border-border">
-                        <th className="text-left py-3 px-4 font-semibold text-foreground w-16">Поз.</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Наименование</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Ед.изм.</th>
-                        <th className="text-right py-3 px-4 font-semibold text-foreground">Кол.</th>
-                        <th className="text-right py-3 px-4 font-semibold text-foreground">%</th>
+                      <tr className="bg-primary/5">
+                        <th className="text-left py-4 px-6 font-semibold text-primary text-sm w-20">Поз.</th>
+                        <th className="text-left py-4 px-6 font-semibold text-primary text-sm">Наименование</th>
+                        <th className="text-center py-4 px-6 font-semibold text-primary text-sm w-28">Ед.изм.</th>
+                        <th className="text-right py-4 px-6 font-semibold text-primary text-sm w-32">Кол.</th>
+                        <th className="text-right py-4 px-6 font-semibold text-primary text-sm w-24">%</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">1</td>
-                        <td className="py-3 px-4">Площадь участка в границах благ-ва</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">5 693</td>
-                        <td className="py-3 px-4 text-right font-medium">100</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">1</td>
+                        <td className="py-4 px-6 text-foreground">Площадь участка в границах благ-ва</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">5 693</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-accent/10 text-accent font-semibold text-sm">
+                            100%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">2</td>
-                        <td className="py-3 px-4">Площадь застройки, в том числе:</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">4 675,75</td>
-                        <td className="py-3 px-4 text-right font-medium">82</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">2</td>
+                        <td className="py-4 px-6 text-foreground font-medium">Площадь застройки, в том числе:</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">4 675,75</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                            82%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">3</td>
-                        <td className="py-3 px-4 pl-8">Площадь покрытий</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">2 722,75</td>
-                        <td className="py-3 px-4 text-right font-medium">48</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">3</td>
+                        <td className="py-4 px-6 pl-12 text-foreground">Площадь покрытий</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">2 722,75</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-muted text-foreground font-semibold text-sm">
+                            48%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">4</td>
-                        <td className="py-3 px-4 pl-8">Площадь озеленения</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">1 953</td>
-                        <td className="py-3 px-4 text-right font-medium">34</td>
+                      <tr className="hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">4</td>
+                        <td className="py-4 px-6 pl-12 text-foreground">Площадь озеленения</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">1 953</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-muted text-foreground font-semibold text-sm">
+                            34%
+                          </span>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -1060,47 +1076,63 @@ const Index = () => {
               Технико-экономические показатели
             </h4>
             
-            <Card className="mb-8">
-              <CardContent className="p-6">
+            <Card className="mb-8 overflow-hidden">
+              <CardContent className="p-0">
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b border-border">
-                        <th className="text-left py-3 px-4 font-semibold text-foreground w-16">Поз.</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Наименование</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Ед.изм.</th>
-                        <th className="text-right py-3 px-4 font-semibold text-foreground">Кол.</th>
-                        <th className="text-right py-3 px-4 font-semibold text-foreground">%</th>
+                      <tr className="bg-primary/5">
+                        <th className="text-left py-4 px-6 font-semibold text-primary text-sm w-20">Поз.</th>
+                        <th className="text-left py-4 px-6 font-semibold text-primary text-sm">Наименование</th>
+                        <th className="text-center py-4 px-6 font-semibold text-primary text-sm w-28">Ед.изм.</th>
+                        <th className="text-right py-4 px-6 font-semibold text-primary text-sm w-32">Кол.</th>
+                        <th className="text-right py-4 px-6 font-semibold text-primary text-sm w-24">%</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">1</td>
-                        <td className="py-3 px-4">Площадь участка в границах благ-ва</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">11 708</td>
-                        <td className="py-3 px-4 text-right font-medium">100</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">1</td>
+                        <td className="py-4 px-6 text-foreground">Площадь участка в границах благ-ва</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">11 708</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-accent/10 text-accent font-semibold text-sm">
+                            100%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">2</td>
-                        <td className="py-3 px-4">Площадь застройки, в том числе:</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">6 864,05</td>
-                        <td className="py-3 px-4 text-right font-medium">59</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">2</td>
+                        <td className="py-4 px-6 text-foreground font-medium">Площадь застройки, в том числе:</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">6 864,05</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                            59%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">3</td>
-                        <td className="py-3 px-4 pl-8">Площадь покрытий</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">4 846,05</td>
-                        <td className="py-3 px-4 text-right font-medium">41</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">3</td>
+                        <td className="py-4 px-6 pl-12 text-foreground">Площадь покрытий</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">4 846,05</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-muted text-foreground font-semibold text-sm">
+                            41%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">4</td>
-                        <td className="py-3 px-4 pl-8">Площадь озеленения</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">2 018</td>
-                        <td className="py-3 px-4 text-right font-medium">18</td>
+                      <tr className="hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">4</td>
+                        <td className="py-4 px-6 pl-12 text-foreground">Площадь озеленения</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">2 018</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-muted text-foreground font-semibold text-sm">
+                            18%
+                          </span>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -1210,47 +1242,63 @@ const Index = () => {
               Технико-экономические показатели
             </h4>
             
-            <Card className="mb-8">
-              <CardContent className="p-6">
+            <Card className="mb-8 overflow-hidden">
+              <CardContent className="p-0">
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
-                      <tr className="border-b border-border">
-                        <th className="text-left py-3 px-4 font-semibold text-foreground w-16">Поз.</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Наименование</th>
-                        <th className="text-left py-3 px-4 font-semibold text-foreground">Ед.изм.</th>
-                        <th className="text-right py-3 px-4 font-semibold text-foreground">Кол.</th>
-                        <th className="text-right py-3 px-4 font-semibold text-foreground">%</th>
+                      <tr className="bg-primary/5">
+                        <th className="text-left py-4 px-6 font-semibold text-primary text-sm w-20">Поз.</th>
+                        <th className="text-left py-4 px-6 font-semibold text-primary text-sm">Наименование</th>
+                        <th className="text-center py-4 px-6 font-semibold text-primary text-sm w-28">Ед.изм.</th>
+                        <th className="text-right py-4 px-6 font-semibold text-primary text-sm w-32">Кол.</th>
+                        <th className="text-right py-4 px-6 font-semibold text-primary text-sm w-24">%</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">1</td>
-                        <td className="py-3 px-4">Площадь участка в границах благ-ва</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">5 543</td>
-                        <td className="py-3 px-4 text-right font-medium">100</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">1</td>
+                        <td className="py-4 px-6 text-foreground">Площадь участка в границах благ-ва</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">5 543</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-accent/10 text-accent font-semibold text-sm">
+                            100%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">2</td>
-                        <td className="py-3 px-4">Площадь застройки, в том числе:</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">2 870,1</td>
-                        <td className="py-3 px-4 text-right font-medium">52</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">2</td>
+                        <td className="py-4 px-6 text-foreground font-medium">Площадь застройки, в том числе:</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">2 870,1</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                            52%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="border-b border-border hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">3</td>
-                        <td className="py-3 px-4 pl-8">Площадь покрытий</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">2 870,1</td>
-                        <td className="py-3 px-4 text-right font-medium">52</td>
+                      <tr className="border-b border-border/50 hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">3</td>
+                        <td className="py-4 px-6 pl-12 text-foreground">Площадь покрытий</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">2 870,1</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-muted text-foreground font-semibold text-sm">
+                            52%
+                          </span>
+                        </td>
                       </tr>
-                      <tr className="hover:bg-muted/50">
-                        <td className="py-3 px-4 text-center">4</td>
-                        <td className="py-3 px-4 pl-8">Площадь озеленения</td>
-                        <td className="py-3 px-4">м²</td>
-                        <td className="py-3 px-4 text-right font-medium">0</td>
-                        <td className="py-3 px-4 text-right font-medium">0</td>
+                      <tr className="hover:bg-accent/5 transition-colors">
+                        <td className="py-4 px-6 text-center font-medium text-muted-foreground">4</td>
+                        <td className="py-4 px-6 pl-12 text-foreground">Площадь озеленения</td>
+                        <td className="py-4 px-6 text-center text-muted-foreground">м²</td>
+                        <td className="py-4 px-6 text-right font-semibold text-foreground">0</td>
+                        <td className="py-4 px-6 text-right">
+                          <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-muted text-foreground font-semibold text-sm">
+                            0%
+                          </span>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
