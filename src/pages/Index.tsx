@@ -442,6 +442,208 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="project-factory" className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <Button onClick={() => scrollToSection('projects')} variant="outline" className="mb-8">
+              <Icon name="ArrowLeft" size={20} />
+              <span className="ml-2">Все проекты</span>
+            </Button>
+            
+            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
+              Проектирование промышленных цехов
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Комплексное проектирование цехов и логистической схемы промышленного комплекса на территории 2.9 Га с размещением производственных объектов капитального строительства
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/5a54d544-5775-4f0b-ab49-12c5b0a25b7e.jpeg" 
+                    alt="Ситуационный план земельного участка" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Ситуационный план земельного участка М1:2000</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/0fb22995-23e9-43d1-a2e9-79cd3bfcf873.png" 
+                    alt="Генеральный план промышленного комплекса" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Генеральный план с размещением цехов №1, №2 и МАФ №3-8</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/654de20c-69a4-4122-9703-13cf5394f8c0.png" 
+                    alt="План благоустройства территории" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">План благоустройства территории</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/7019e305-3501-4f20-a368-8d372baba845.png" 
+                    alt="Узел А: Сопряжение покрытия с газоном" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел А: Сопряжение покрытия тротуара с газоном</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/27854838-74e2-4b53-a422-660217030036.jpeg" 
+                    alt="Узлы В и Б: Сопряжение покрытий" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узлы В и Б: Сопряжение покрытий с проездом</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+              Технико-экономические показатели
+            </h4>
+            
+            <Card className="mb-8">
+              <CardContent className="p-6">
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-3 px-4 font-semibold text-foreground">Наименование объекта</th>
+                        <th className="text-left py-3 px-4 font-semibold text-foreground">Единица измерения</th>
+                        <th className="text-right py-3 px-4 font-semibold text-foreground">Значение</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 font-semibold" colspan="3">Цех №1 (здание промышленного назначения)</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Площадь застройки</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">9 214</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Площадь здания</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">134 149</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Строительный объём</td>
+                        <td className="py-3 px-4">м³</td>
+                        <td className="py-3 px-4 text-right font-medium">134 149</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 font-semibold" colspan="3">Цех №2 (здание промышленного назначения)</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Площадь застройки</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">4 701</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Площадь здания</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">134 824</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Строительный объём</td>
+                        <td className="py-3 px-4">м³</td>
+                        <td className="py-3 px-4 text-right font-medium">134 824</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 font-semibold" colspan="3">Малые архитектурные формы</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">МАФ №3-8</td>
+                        <td className="py-3 px-4">шт</td>
+                        <td className="py-3 px-4 text-right font-medium">6</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 font-semibold" colspan="3">Покрытия и благоустройство</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Асфальтобетонное покрытие проездов</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">8 500</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Тротуары (бетонная обойма)</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">1 200</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 pl-8">Озеленение территории</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">4 500</td>
+                      </tr>
+                      <tr className="hover:bg-muted/50">
+                        <td className="py-3 px-4 font-semibold">Общая площадь участка</td>
+                        <td className="py-3 px-4">Га</td>
+                        <td className="py-3 px-4 text-right font-bold text-accent">2.9</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Factory" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">2 цеха</div>
+                  <div className="text-sm text-muted-foreground">Производственные здания</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Square" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">268 973 м²</div>
+                  <div className="text-sm text-muted-foreground">Общая площадь зданий</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="MapPin" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">2.9 Га</div>
+                  <div className="text-sm text-muted-foreground">Территория участка</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="skills" className="py-24">
         <div className="container mx-auto px-6">
           <h3 className="text-4xl font-heading font-bold text-primary mb-12 text-center">
