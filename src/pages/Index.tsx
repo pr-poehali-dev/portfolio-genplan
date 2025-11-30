@@ -271,8 +271,68 @@ const Index = () => {
               Капитальный ремонт взлётно-посадочной полосы
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Проектирование капитального ремонта ВПП длиной 1625 м с усилением конструкции покрытия и модернизацией инфраструктуры аэропорта
+              Капитальный ремонт ВПП 1625 м с усилением конструкции и модернизацией инфраструктуры
             </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="bg-primary/5 border-primary/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="Target" size={20} />
+                    Задача
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Ремонт ВПП (1625 м), рулёжки и перрона</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Замена асфальта и деформационных швов</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Устройство армированного покрытия</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Нанесение маркировки</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-accent/5 border-accent/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="CheckCircle" size={20} />
+                    Решения и выполненные работы
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Демонтаж изношенного покрытия и фрезерование асфальтобетона</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Усиление дорожной одежды геосеткой</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Устройство нового асфальтобетонного покрытия</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Восстановление деформационных швов</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Нанесение светоотражающей разметки</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <Card>
@@ -454,8 +514,76 @@ const Index = () => {
               Проектирование промышленных цехов
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Комплексное проектирование цехов и логистической схемы промышленного комплекса на территории 2.9 Га с размещением производственных объектов капитального строительства
+              Комплексное проектирование цехов и логистической схемы на территории 2,9 Га
             </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="bg-primary/5 border-primary/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="Target" size={20} />
+                    Задача
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Площадь участка: 2.9 Га</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Разместить 2 цеха и запроектировать подъезды к ним</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Спроектировать дороги и тротуары</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Рассчитать земляные работы</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Организовать отвод воды с территории</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Разместить газоны и инженерные сети</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-accent/5 border-accent/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="CheckCircle" size={20} />
+                    Решения и выполненные работы
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Разработка генерального плана с размещением объектов</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Проектирование транспортной и пешеходной инфраструктуры</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Вертикальная планировка с организацией водоотвода</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Земляные работы с балансом грунта</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Благоустройство территории и озеленение</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <Card>
@@ -669,8 +797,76 @@ const Index = () => {
               Многофункциональный реабилитационный центр
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Проектирование многофункционального пространства для реабилитации и развития детей с комплексным благоустройством территории
+              Многофункциональное пространство для реабилитации и развития детей
             </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="bg-primary/5 border-primary/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="Target" size={20} />
+                    Задача
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Благоустройство территории центра</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>2 детские площадки для разных возрастов (3-7 и 7-14 лет)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Спортивная зона с тренажерами</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Доступная среда для маломобильных детей</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Освещение и ливневая канализация</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Озеленение и установка МАФ</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-accent/5 border-accent/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="CheckCircle" size={20} />
+                    Решения и выполненные работы
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Вертикальная планировка территории</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Устройство различных типов покрытий</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Создание детских и спортивных зон</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Монтаж инженерных систем</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Благоустройство и озеленение</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <Card>
@@ -923,8 +1119,76 @@ const Index = () => {
               Образовательная экосистема под открытым небом
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Создание современной образовательной экосистемы под открытым небом с благоустройством территории, спортивными зонами и детскими площадками
+              Создание современной образовательной экосистемы под открытым небом
             </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="bg-primary/5 border-primary/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="Target" size={20} />
+                    Задача
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Комплексное благоустройство территории площадью 10 330 м²</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Создание многофункционального пространства для учебы, спорта и отдыха</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Организация безопасной среды для учащихся разных возрастных групп</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Устройство современной спортивной инфраструктуры</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Обеспечение доступной среды для маломобильных групп населения</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Разработка инженерных систем освещения и водоотвода</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-accent/5 border-accent/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="CheckCircle" size={20} />
+                    Решения и выполненные работы
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Демонтаж существующих покрытий и построек</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Земляные работы и вертикальная планировка</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Устройство различных типов покрытий</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Монтаж спортивного оборудования и МАФ</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Обустройство инженерных систем</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <Card>
@@ -1181,8 +1445,72 @@ const Index = () => {
               Комплексное освоение территории под розничную торговлю
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Проектирование торговой зоны с полным комплексом работ по благоустройству территории и организации транспортной инфраструктуры
+              Проектирование торговой зоны с полным комплексом работ
             </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="bg-primary/5 border-primary/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="Target" size={20} />
+                    Задача
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Подготовка территории 0.55 Га под строительство</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Демонтаж старых построек и покрытий</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Вертикальная планировка с балансом грунта</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Организация проездов и инфраструктуры</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Координатная привязка объектов</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-accent/5 border-accent/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="CheckCircle" size={20} />
+                    Решения и выполненные работы
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Демонтаж существующих сооружений и покрытий</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Вертикальная планировка территории</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Геодезические работы и разбивка</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Разработка проектной документации</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Проектирование инфраструктуры</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <Card>
@@ -1347,8 +1675,72 @@ const Index = () => {
               Транспортная инфраструктура карьера «Восточный»
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Комплексное проектирование транспортной инфраструктуры карьера «Восточный» (2 тома) с проектированием дорожных заездов и съездов
+              Комплексное проектирование транспортной инфраструктуры карьера «Восточный» (2 тома)
             </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="bg-primary/5 border-primary/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="Target" size={20} />
+                    Том 1: Задача
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Обеспечение транспортной доступности участка вскрышных работ Западной траншеи</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Строительство дороги IV категории протяженностью 520,58 м для движения тяжелой техники</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Внедрение усиленной конструкции дорожной одежды с применением геосинтетических материалов</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Организация эффективного поверхностного водоотвода для защиты земляного полотна</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Снижение будущих эксплуатационных затрат за счет повышения долговечности покрытия</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-accent/5 border-accent/20">
+                <CardContent className="p-6">
+                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="CheckCircle" size={20} />
+                    Том 2: Задача
+                  </h4>
+                  <ul className="space-y-2 text-sm text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Создание единой транспортной сети для 100% доступности ключевых объектов карьера</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Обеспечение круглогодичной эксплуатации дорог при интенсивном движении тяжелой техники</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Внедрение ресурсосберегающих технологий для снижения капитальных и эксплуатационных затрат</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Защита инфраструктуры от подтопления через организацию комплексного водоотвода</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Минимизация воздействия на окружающую среду</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <Card>
