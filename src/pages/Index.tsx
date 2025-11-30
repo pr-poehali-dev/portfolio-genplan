@@ -728,7 +728,7 @@ const Index = () => {
               </Card>
             </div>
 
-            <Card className="mb-12">
+            <Card className="mb-6">
               <CardContent className="p-0">
                 <img 
                   src="https://cdn.poehali.dev/files/491ef8ed-5287-460f-9f0a-286e81c75bda.png" 
@@ -737,6 +737,79 @@ const Index = () => {
                 />
                 <div className="p-4">
                   <p className="text-sm text-muted-foreground">Развивочная схема МАФ на детской площадке для детей 3-7 лет</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/1866fe78-3497-4512-8b7f-4cd9990abd36.png" 
+                    alt="Развивочная схема детской площадки 7-14 лет" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Развивочная схема МАФ на детской площадке 7-14 лет</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/1e72ac00-47b0-463d-bd31-943ca87b8127.png" 
+                    alt="Развивочная схема спортивной площадки" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Развивочная схема МАФ на спортивной площадке</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+              Детализация конструктивных решений
+            </h4>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/56be61fc-e676-447d-af81-bf61a9957a75.png" 
+                    alt="Узлы устройства бортового камня" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 1-2: Устройство бортового камня между покрытиями и тротуаром</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/00788632-0e54-4999-a04b-1e86c2393869.png" 
+                    alt="Узлы устройства покрытий" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 3-4: Устройство бортового камня между площадками и газоном</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mb-12">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/57bf9541-fae5-4af5-9e69-7e38fd285db9.png" 
+                  alt="Узел устройства пониженного бортового камня" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">Узел 5: Устройство пониженного бортового камня в местах проезда колясочников</p>
                 </div>
               </CardContent>
             </Card>
