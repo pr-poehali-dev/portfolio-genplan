@@ -231,9 +231,16 @@ const Index = () => {
               },
               {
                 id: 'quarry',
-                title: 'Транспортная инфраструктура карьера',
-                description: 'Комплексное проектирование транспортной инфраструктуры карьера «Восточный» (2 тома)',
+                title: 'Транспортная инфраструктура карьера — Том 1',
+                description: 'Обеспечение транспортной доступности участка вскрышных работ Западной траншеи',
                 icon: 'Truck',
+                result: 'Горная промышленность',
+              },
+              {
+                id: 'quarry2',
+                title: 'Транспортная инфраструктура карьера — Том 2',
+                description: 'Создание единой транспортной сети для доступности ключевых объектов карьера',
+                icon: 'Route',
                 result: 'Горная промышленность',
               },
             ].map((project, index) => (
@@ -868,11 +875,12 @@ const Index = () => {
               </Card>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <Card>
-                <CardContent className="p-0">
-                  <img 
-                    src="https://cdn.poehali.dev/files/1d7fba1f-ed76-4969-8959-229ee837b27d.png" 
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
+                <Card>
+                  <CardContent className="p-0">
+                    <img 
+                      src="https://cdn.poehali.dev/files/1d7fba1f-ed76-4969-8959-229ee837b27d.png" 
                     alt="Схема расположения функциональных зон" 
                     className="w-full h-auto rounded-t-lg"
                   />
@@ -963,13 +971,13 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
+              </div>
 
-            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
-              Детализация конструктивных решений
-            </h4>
+              <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+                Детализация конструктивных решений
+              </h4>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
               <Card>
                 <CardContent className="p-0">
                   <img 
@@ -997,22 +1005,22 @@ const Index = () => {
               </Card>
             </div>
 
-            <Card className="mb-12">
-              <CardContent className="p-0">
-                <img 
-                  src="https://cdn.poehali.dev/files/57bf9541-fae5-4af5-9e69-7e38fd285db9.png" 
-                  alt="Узел устройства пониженного бортового камня" 
-                  className="w-full h-auto rounded-lg"
-                />
-                <div className="p-4">
-                  <p className="text-sm text-muted-foreground">Узел 5: Устройство пониженного бортового камня в местах проезда колясочников</p>
-                </div>
-              </CardContent>
-            </Card>
+              <Card className="mb-12">
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/57bf9541-fae5-4af5-9e69-7e38fd285db9.png" 
+                    alt="Узел устройства пониженного бортового камня" 
+                    className="w-full h-auto rounded-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 5: Устройство пониженного бортового камня в местах проезда колясочников</p>
+                  </div>
+                </CardContent>
+              </Card>
 
-            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
-              Технико-экономические показатели
-            </h4>
+              <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+                Технико-экономические показатели
+              </h4>
             
             <Card className="mb-8 overflow-hidden">
               <CardContent className="p-0">
@@ -1078,30 +1086,31 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <Icon name="Heart" className="text-accent mx-auto mb-3" size={32} />
-                  <div className="text-2xl font-bold text-primary mb-1">Реабилитация</div>
-                  <div className="text-sm text-muted-foreground">Многофункциональный центр</div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <Icon name="Users" className="text-accent mx-auto mb-3" size={32} />
-                  <div className="text-2xl font-bold text-primary mb-1">Для детей</div>
-                  <div className="text-sm text-muted-foreground">Развитие и социализация</div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <Icon name="Trees" className="text-accent mx-auto mb-3" size={32} />
-                  <div className="text-2xl font-bold text-primary mb-1">Озеленение</div>
-                  <div className="text-sm text-muted-foreground">Комплексное благоустройство</div>
-                </CardContent>
-              </Card>
+              <div className="grid md:grid-cols-3 gap-6">
+                <Card>
+                  <CardContent className="p-6 text-center">
+                    <Icon name="Heart" className="text-accent mx-auto mb-3" size={32} />
+                    <div className="text-2xl font-bold text-primary mb-1">Реабилитация</div>
+                    <div className="text-sm text-muted-foreground">Многофункциональный центр</div>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardContent className="p-6 text-center">
+                    <Icon name="Users" className="text-accent mx-auto mb-3" size={32} />
+                    <div className="text-2xl font-bold text-primary mb-1">Для детей</div>
+                    <div className="text-sm text-muted-foreground">Развитие и социализация</div>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardContent className="p-6 text-center">
+                    <Icon name="Trees" className="text-accent mx-auto mb-3" size={32} />
+                    <div className="text-2xl font-bold text-primary mb-1">Озеленение</div>
+                    <div className="text-sm text-muted-foreground">Комплексное благоустройство</div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
@@ -1672,77 +1681,44 @@ const Index = () => {
             </Button>
             
             <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Транспортная инфраструктура карьера «Восточный»
+              Транспортная инфраструктура карьера «Восточный» — Том 1
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Комплексное проектирование транспортной инфраструктуры карьера «Восточный» (2 тома)
+              Обеспечение транспортной доступности участка вскрышных работ Западной траншеи
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Card className="bg-primary/5 border-primary/20">
-                <CardContent className="p-6">
-                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
-                    <Icon name="Target" size={20} />
-                    Том 1: Задача
-                  </h4>
-                  <ul className="space-y-2 text-sm text-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Обеспечение транспортной доступности участка вскрышных работ Западной траншеи</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Строительство дороги IV категории протяженностью 520,58 м для движения тяжелой техники</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Внедрение усиленной конструкции дорожной одежды с применением геосинтетических материалов</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Организация эффективного поверхностного водоотвода для защиты земляного полотна</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Снижение будущих эксплуатационных затрат за счет повышения долговечности покрытия</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+            <Card className="bg-primary/5 border-primary/20 mb-8">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                  <Icon name="Target" size={20} />
+                  Задача
+                </h4>
+                <ul className="space-y-2 text-sm text-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Обеспечение транспортной доступности участка вскрышных работ Западной траншеи</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Строительство дороги IV категории протяженностью 520,58 м для движения тяжелой техники</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Внедрение усиленной конструкции дорожной одежды с применением геосинтетических материалов</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Организация эффективного поверхностного водоотвода для защиты земляного полотна</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Снижение будущих эксплуатационных затрат за счет повышения долговечности покрытия</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
 
-              <Card className="bg-accent/5 border-accent/20">
-                <CardContent className="p-6">
-                  <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
-                    <Icon name="CheckCircle" size={20} />
-                    Том 2: Задача
-                  </h4>
-                  <ul className="space-y-2 text-sm text-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Создание единой транспортной сети для 100% доступности ключевых объектов карьера</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Обеспечение круглогодичной эксплуатации дорог при интенсивном движении тяжелой техники</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Внедрение ресурсосберегающих технологий для снижения капитальных и эксплуатационных затрат</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Защита инфраструктуры от подтопления через организацию комплексного водоотвода</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent mt-1">•</span>
-                      <span>Минимизация воздействия на окружающую среду</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="max-w-3xl mx-auto space-y-6 mb-12">
               <Card>
                 <CardContent className="p-0">
                   <img 
@@ -1769,74 +1745,120 @@ const Index = () => {
                 </CardContent>
               </Card>
             </div>
-
-            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
-              Технические схемы и детализация
-            </h4>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card>
-                <CardContent className="p-0">
-                  <img 
-                    src="https://cdn.poehali.dev/files/eade7b86-9146-4e9d-9b81-c32f638ddc01.png" 
-                    alt="Схема установки дорожных знаков с бортом" 
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                  <div className="p-4">
-                    <p className="text-sm text-muted-foreground">Схема установки дорожных знаков с бортом</p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-0">
-                  <img 
-                    src="https://cdn.poehali.dev/files/6e89208f-5ee2-4b2e-b0dc-af99cce28c96.png" 
-                    alt="Обозначение железной полосы железнодорожного пути" 
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                  <div className="p-4">
-                    <p className="text-sm text-muted-foreground">Обозначение железной полосы железнодорожного пути и объездной дороги в Западной промзоне</p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="p-0">
-                  <img 
-                    src="https://cdn.poehali.dev/files/ef09c5e0-656c-40db-ad08-36dbb56862b8.png" 
-                    alt="Таблица земляных масс" 
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                  <div className="p-4">
-                    <p className="text-sm text-muted-foreground">Таблица земляных масс и расчеты объемов работ</p>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="flex justify-center gap-4">
               <Card>
                 <CardContent className="p-6 text-center">
                   <Icon name="Truck" className="text-accent mx-auto mb-3" size={32} />
-                  <div className="text-2xl font-bold text-primary mb-1">Карьер</div>
-                  <div className="text-sm text-muted-foreground">Горная промышленность</div>
+                  <div className="text-2xl font-bold text-primary mb-1">520,58 м</div>
+                  <div className="text-sm text-muted-foreground">Протяженность дороги</div>
                 </CardContent>
               </Card>
               
               <Card>
                 <CardContent className="p-6 text-center">
                   <Icon name="Route" className="text-accent mx-auto mb-3" size={32} />
-                  <div className="text-2xl font-bold text-primary mb-1">Дороги</div>
-                  <div className="text-sm text-muted-foreground">Транспортная сеть</div>
+                  <div className="text-2xl font-bold text-primary mb-1">IV категория</div>
+                  <div className="text-sm text-muted-foreground">Тяжелая техника</div>
                 </CardContent>
               </Card>
               
               <Card>
                 <CardContent className="p-6 text-center">
-                  <Icon name="FileStack" className="text-accent mx-auto mb-3" size={32} />
-                  <div className="text-2xl font-bold text-primary mb-1">2 тома</div>
-                  <div className="text-sm text-muted-foreground">Комплексный проект</div>
+                  <Icon name="Shield" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Геосинтетика</div>
+                  <div className="text-sm text-muted-foreground">Усиленная конструкция</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project-quarry2" className="py-24">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <Button onClick={() => scrollToSection('projects')} variant="outline" className="mb-8">
+              <Icon name="ArrowLeft" size={20} />
+              <span className="ml-2">Все проекты</span>
+            </Button>
+            
+            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
+              Транспортная инфраструктура карьера «Восточный» — Том 2
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Создание единой транспортной сети для доступности ключевых объектов карьера
+            </p>
+
+            <Card className="bg-accent/5 border-accent/20 mb-8">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                  <Icon name="Target" size={20} />
+                  Задача
+                </h4>
+                <ul className="space-y-2 text-sm text-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Создание единой транспортной сети для 100% доступности ключевых объектов карьера</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Обеспечение круглогодичной эксплуатации дорог при интенсивном движении тяжелой техники</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Внедрение ресурсосберегающих технологий для снижения капитальных и эксплуатационных затрат</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Защита инфраструктуры от подтопления через организацию комплексного водоотвода</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Минимизация воздействия на окружающую среду</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <div className="max-w-3xl mx-auto space-y-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/28974f0f-a4af-4e64-9fd2-817a31f2db92.png" 
+                    alt="Схема дорожной сети карьера" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Генеральная схема дорожной сети карьера «Восточный»</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="flex justify-center gap-4">
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Network" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">100%</div>
+                  <div className="text-sm text-muted-foreground">Доступность объектов</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Calendar" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Круглый год</div>
+                  <div className="text-sm text-muted-foreground">Эксплуатация</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Leaf" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Экология</div>
+                  <div className="text-sm text-muted-foreground">Защита среды</div>
                 </CardContent>
               </Card>
             </div>
