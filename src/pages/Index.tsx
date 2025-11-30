@@ -1745,7 +1745,6 @@ const Index = () => {
                 </CardContent>
               </Card>
             </div>
-            </div>
 
             <div className="flex justify-center gap-4">
               <Card>
