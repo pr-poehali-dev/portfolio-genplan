@@ -41,7 +41,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-heading font-bold text-primary">Иван Петров</h1>
+            <h1 className="text-xl font-heading font-bold text-primary">Усов Артём Игоревич</h1>
             <div className="hidden md:flex gap-8">
               {[
                 { id: 'home', label: 'Главная' },
@@ -70,12 +70,12 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <p className="text-secondary font-medium mb-2">Генеральный директор</p>
+              <p className="text-secondary font-medium mb-2">Инженер-проектировщик генплана</p>
               <h2 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-4">
-                Иван Петров
+                Усов Артём Игоревич
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Стратегическое развитие бизнеса, трансформация компаний и создание эффективных управленческих систем
+                Комплексное проектирование генеральных планов, транспортной и инженерной инфраструктуры промышленных и социальных объектов
               </p>
               <div className="flex gap-4">
                 <Button onClick={() => scrollToSection('contact')} size="lg">
@@ -89,7 +89,7 @@ const Index = () => {
             <div className="animate-fade-in flex justify-center">
               <img
                 src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/4a2f22bb-a796-441f-b4bf-2e3e00bc2650.jpg"
-                alt="Иван Петров"
+                alt="Усов Артём Игоревич"
                 className="rounded-lg shadow-2xl max-w-md w-full"
               />
             </div>
@@ -106,20 +106,20 @@ const Index = () => {
             <Card className="animate-fade-in">
               <CardContent className="p-8">
                 <p className="text-lg text-foreground leading-relaxed mb-6">
-                  Опытный руководитель с более чем 15-летним опытом управления крупными компаниями в различных отраслях. Специализируюсь на стратегическом планировании, операционной эффективности и развитии корпоративной культуры.
+                  Инженер-проектировщик с опытом разработки комплексных решений для промышленных объектов, транспортной инфраструктуры и социальных учреждений. Специализируюсь на генеральном планировании, благоустройстве территорий и проектировании дорог.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   <div className="text-center p-6 bg-background rounded-lg">
-                    <div className="text-4xl font-heading font-bold text-accent mb-2">15+</div>
-                    <div className="text-sm text-muted-foreground">Лет опыта</div>
+                    <div className="text-4xl font-heading font-bold text-accent mb-2">7+</div>
+                    <div className="text-sm text-muted-foreground">Крупных проектов</div>
                   </div>
                   <div className="text-center p-6 bg-background rounded-lg">
-                    <div className="text-4xl font-heading font-bold text-accent mb-2">50+</div>
-                    <div className="text-sm text-muted-foreground">Реализованных проектов</div>
+                    <div className="text-4xl font-heading font-bold text-accent mb-2">2.9</div>
+                    <div className="text-sm text-muted-foreground">Га освоенных территорий</div>
                   </div>
                   <div className="text-center p-6 bg-background rounded-lg">
-                    <div className="text-4xl font-heading font-bold text-accent mb-2">12</div>
-                    <div className="text-sm text-muted-foreground">Стран присутствия</div>
+                    <div className="text-4xl font-heading font-bold text-accent mb-2">1625</div>
+                    <div className="text-sm text-muted-foreground">Метров ВПП</div>
                   </div>
                 </div>
               </CardContent>
@@ -136,33 +136,23 @@ const Index = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             {[
               {
-                year: '2020 - настоящее время',
-                position: 'Генеральный директор',
-                company: 'ООО "ТехноИнвест"',
+                year: '2023 - 2024',
+                position: 'Ведущий инженер-проектировщик',
+                company: 'Проектное бюро',
                 achievements: [
-                  'Увеличение выручки компании на 250% за 3 года',
-                  'Успешный выход на международные рынки (Европа, Азия)',
-                  'Внедрение цифровой трансформации всех бизнес-процессов',
+                  'Разработка генплана транспортной инфраструктуры карьера (2 тома)',
+                  'Проектирование комплекса цехов на территории 2.9 Га',
+                  'Капитальный ремонт ВПП 1625м с усилением конструкции',
                 ],
               },
               {
-                year: '2015 - 2020',
-                position: 'Операционный директор',
-                company: 'АО "Промышленная группа"',
+                year: '2021 - 2023',
+                position: 'Инженер-проектировщик',
+                company: 'Архитектурное бюро',
                 achievements: [
-                  'Оптимизация операционных расходов на 35%',
-                  'Построение системы управления качеством ISO 9001',
-                  'Реорганизация производственной структуры 5 заводов',
-                ],
-              },
-              {
-                year: '2010 - 2015',
-                position: 'Директор по развитию',
-                company: 'ЗАО "Инновационные решения"',
-                achievements: [
-                  'Запуск 3 новых направлений бизнеса',
-                  'Привлечение инвестиций на сумму 500 млн рублей',
-                  'Формирование стратегии развития на 10 лет',
+                  'Создание образовательной экосистемы под открытым небом',
+                  'Проектирование многофункционального реабилитационного центра',
+                  'Комплексное освоение территории под розничную торговлю',
                 ],
               },
             ].map((item, index) => (
@@ -205,40 +195,40 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: 'Цифровая трансформация',
-                description: 'Внедрение ERP-системы и автоматизация ключевых бизнес-процессов',
-                icon: 'Laptop',
-                result: 'Экономия 40% времени',
+                title: 'Капитальный ремонт ВПП',
+                description: 'Капитальный ремонт ВПП 1625 м с усилением конструкции и модернизацией инфраструктуры',
+                icon: 'Plane',
+                result: 'Аэропорт РФ',
               },
               {
-                title: 'Международная экспансия',
-                description: 'Открытие представительств в 8 странах Европы и Азии',
-                icon: 'Globe',
-                result: '+180% выручка',
+                title: 'Проектирование цехов',
+                description: 'Комплексное проектирование цехов и логистической схемы на территории 2.9 Га',
+                icon: 'Factory',
+                result: 'Промышленный комплекс',
               },
               {
-                title: 'M&A сделки',
-                description: 'Успешное слияние с 3 компаниями в смежных отраслях',
-                icon: 'TrendingUp',
-                result: 'Синергия 25%',
+                title: 'Реабилитационный центр',
+                description: 'Многофункциональное пространство для реабилитации и развития детей',
+                icon: 'Heart',
+                result: 'Социальный объект',
               },
               {
-                title: 'Развитие команды',
-                description: 'Создание корпоративного университета и системы обучения',
-                icon: 'Users',
-                result: '500+ сотрудников',
+                title: 'Образовательная экосистема',
+                description: 'Создание современной образовательной экосистемы под открытым небом',
+                icon: 'GraduationCap',
+                result: 'Образование',
               },
               {
-                title: 'Устойчивое развитие',
-                description: 'Внедрение ESG-стандартов и зеленых технологий',
-                icon: 'Leaf',
-                result: '-60% выбросов CO2',
+                title: 'Торговая зона',
+                description: 'Комплексное освоение территории под розничную торговлю',
+                icon: 'ShoppingCart',
+                result: 'Ретейл',
               },
               {
-                title: 'Инновационный центр',
-                description: 'Создание R&D подразделения и запуск 10 новых продуктов',
-                icon: 'Lightbulb',
-                result: '15% доля инноваций',
+                title: 'Транспортная инфраструктура карьера',
+                description: 'Комплексное проектирование транспортной инфраструктуры карьера «Восточный» (2 тома)',
+                icon: 'Truck',
+                result: 'Горная промышленность',
               },
             ].map((project, index) => (
               <Card key={index} className="animate-fade-in hover:shadow-xl transition-all group">
@@ -271,39 +261,39 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  category: 'Стратегическое управление',
+                  category: 'Проектирование генпланов',
                   skills: [
-                    'Долгосрочное планирование',
-                    'Анализ рынков и конкурентов',
-                    'M&A и корпоративное развитие',
-                    'Управление изменениями',
+                    'Разработка генеральных планов',
+                    'Планировка территорий',
+                    'Градостроительное проектирование',
+                    'Зонирование территорий',
                   ],
                 },
                 {
-                  category: 'Операционное управление',
+                  category: 'Транспортная инфраструктура',
                   skills: [
-                    'Оптимизация бизнес-процессов',
-                    'Контроль качества',
-                    'Supply chain management',
-                    'Lean и Six Sigma',
+                    'Проектирование дорог',
+                    'Транспортные узлы',
+                    'Логистические схемы',
+                    'Аэродромные покрытия',
                   ],
                 },
                 {
-                  category: 'Финансовый менеджмент',
+                  category: 'Благоустройство',
                   skills: [
-                    'Бюджетирование и планирование',
-                    'Привлечение инвестиций',
-                    'Финансовая аналитика',
-                    'Управление рисками',
+                    'Ландшафтное проектирование',
+                    'Озеленение территорий',
+                    'Малые архитектурные формы',
+                    'Пешеходные пространства',
                   ],
                 },
                 {
-                  category: 'Лидерство и развитие',
+                  category: 'Инженерные сети',
                   skills: [
-                    'Управление командами',
-                    'Корпоративная культура',
-                    'Наставничество и коучинг',
-                    'Управление талантами',
+                    'Водоснабжение и канализация',
+                    'Электроснабжение',
+                    'Теплоснабжение',
+                    'Ливневая канализация',
                   ],
                 },
               ].map((item, index) => (
@@ -346,8 +336,8 @@ const Index = () => {
                   </div>
                   <div>
                     <div className="font-medium mb-1">Email</div>
-                    <a href="mailto:ivan.petrov@example.com" className="text-primary-foreground/80 hover:text-primary-foreground">
-                      ivan.petrov@example.com
+                    <a href="mailto:artem.usov@example.com" className="text-primary-foreground/80 hover:text-primary-foreground">
+                      artem.usov@example.com
                     </a>
                   </div>
                 </div>
@@ -411,7 +401,7 @@ const Index = () => {
 
       <footer className="py-8 border-t border-border">
         <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
-          © 2024 Иван Петров. Все права защищены.
+          © 2024 Усов Артём Игоревич. Все права защищены.
         </div>
       </footer>
     </div>
