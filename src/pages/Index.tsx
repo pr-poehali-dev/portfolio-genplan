@@ -74,9 +74,15 @@ const Index = () => {
               <h2 className="text-5xl md:text-6xl font-heading font-bold text-primary mb-4">
                 Усов Артём Игоревич
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
                 Комплексное проектирование генеральных планов, транспортной и инженерной инфраструктуры промышленных и социальных объектов
               </p>
+              <div className="flex items-center gap-2 mb-8">
+                <Icon name="Laptop" className="text-accent" size={20} />
+                <p className="text-sm font-medium text-foreground">
+                  AutoCAD • Civil 3D
+                </p>
+              </div>
               <div className="flex gap-4">
                 <Button onClick={() => scrollToSection('contact')} size="lg">
                   Связаться
@@ -108,6 +114,35 @@ const Index = () => {
                 <p className="text-lg text-foreground leading-relaxed mb-6">
                   Инженер-проектировщик с опытом разработки комплексных решений для промышленных объектов, транспортной инфраструктуры и социальных учреждений. Специализируюсь на генеральном планировании, благоустройстве территорий и проектировании дорог.
                 </p>
+                <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 mb-6">
+                  <h4 className="text-base font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Icon name="Laptop" size={20} />
+                    Программное обеспечение
+                  </h4>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="flex items-start gap-2">
+                      <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-0.5" size={16} />
+                      <div>
+                        <p className="font-medium text-sm">AutoCAD, Civil 3D</p>
+                        <p className="text-xs text-muted-foreground">3D-моделирование территорий</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-0.5" size={16} />
+                      <div>
+                        <p className="font-medium text-sm">Автоматизация чертежей</p>
+                        <p className="text-xs text-muted-foreground">Работа с геоданными</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-0.5" size={16} />
+                      <div>
+                        <p className="font-medium text-sm">Трассирование</p>
+                        <p className="text-xs text-muted-foreground">Линейные объекты</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   <div className="text-center p-6 bg-background rounded-lg">
                     <div className="text-4xl font-heading font-bold text-accent mb-2">7+</div>
