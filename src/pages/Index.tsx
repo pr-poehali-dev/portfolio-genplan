@@ -220,216 +220,104 @@ const Index = () => {
           <h3 className="text-4xl font-heading font-bold text-primary mb-12 text-center">
             Избранные проекты
           </h3>
-          <div className="space-y-16 max-w-6xl mx-auto">
-            <Card className="animate-fade-in overflow-hidden">
-              <div className="grid md:grid-cols-2">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            {[
+              {
+                title: 'Капитальный ремонт ВПП 1625м',
+                description: 'Проект капитального ремонта взлётно-посадочной полосы включает полное усиление конструкции покрытия, модернизацию системы освещения и дренажа.',
+                icon: 'Plane',
+                image: 'https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/a9ac08f6-51aa-4ae1-b10a-19c50e0bb8b5.jpg',
+                details: [
+                  { icon: 'Ruler', label: 'Длина', value: '1625 метров' },
+                  { icon: 'Layers', label: 'Работы', value: 'Усиление покрытия, дренаж' },
+                  { icon: 'Lightbulb', label: 'Системы', value: 'Модернизация освещения' },
+                ],
+              },
+              {
+                title: 'Комплекс цехов 2.9 Га',
+                description: 'Генеральный план промышленной территории включает два производственных корпуса, развитую транспортную инфраструктуру и полный комплекс инженерных коммуникаций.',
+                icon: 'Factory',
+                image: 'https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/7b1c8e8f-2ba5-4bfb-9eb7-c64f31e3b332.jpg',
+                details: [
+                  { icon: 'Map', label: 'Площадь', value: '2.9 гектара' },
+                  { icon: 'Building2', label: 'Объекты', value: '2 производственных корпуса' },
+                  { icon: 'Route', label: 'Инфраструктура', value: 'Дороги, коммуникации' },
+                ],
+              },
+              {
+                title: 'Реабилитационный центр',
+                description: 'Многофункциональное пространство для детской реабилитации с продуманным ландшафтным дизайном.',
+                icon: 'Heart',
+                image: 'https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/89a5fdba-0fc5-4b49-91e3-b7ad12d38dfc.jpg',
+                details: [
+                  { icon: 'Activity', label: 'Зоны', value: 'Реабилитация и терапия' },
+                  { icon: 'Smile', label: 'Развлечения', value: 'Игровые площадки' },
+                  { icon: 'Trees', label: 'Ландшафт', value: 'Зелёные зоны, доступная среда' },
+                ],
+              },
+              {
+                title: 'Образовательная экосистема',
+                description: 'Открытая образовательная среда с интеграцией природных элементов, учебными зонами на открытом воздухе.',
+                icon: 'GraduationCap',
+                image: 'https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/b1f0926c-b53b-45a5-9e65-d47bf3b4afd5.jpg',
+                details: [
+                  { icon: 'BookOpen', label: 'Обучение', value: 'Учебные зоны на воздухе' },
+                  { icon: 'Leaf', label: 'Экология', value: 'Тропы и ботанический сад' },
+                  { icon: 'Users', label: 'Мероприятия', value: 'Амфитеатр' },
+                ],
+              },
+              {
+                title: 'Торговая зона',
+                description: 'Комплексная разработка коммерческой территории с организацией парковочного пространства на 50 машиномест.',
+                icon: 'ShoppingBag',
+                image: 'https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/c2f9b5a3-0afe-4b76-8b03-a184245fde9d.jpg',
+                details: [
+                  { icon: 'Store', label: 'Назначение', value: 'Торговые площади' },
+                  { icon: 'Car', label: 'Парковка', value: '50 машиномест' },
+                  { icon: 'Footprints', label: 'Территория', value: 'Пешеходные зоны' },
+                ],
+              },
+              {
+                title: 'Транспортная инфраструктура карьера',
+                description: 'Генплан транспортной сети для добывающего предприятия. Проектная документация включает 2 тома.',
+                icon: 'Truck',
+                image: 'https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/e5a8f9d7-4c3b-4e2f-b8a1-d6f8e3c9a2b4.jpg',
+                details: [
+                  { icon: 'Network', label: 'Дороги', value: 'Транспортная сеть карьера' },
+                  { icon: 'Package', label: 'Логистика', value: 'Разгрузочные зоны' },
+                  { icon: 'FileText', label: 'Документация', value: '2 тома' },
+                ],
+              },
+            ].map((project, index) => (
+              <Card key={index} className="animate-fade-in overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
                 <img 
-                  src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/a9ac08f6-51aa-4ae1-b10a-19c50e0bb8b5.jpg"
-                  alt="Капитальный ремонт ВПП"
-                  className="w-full h-full object-cover"
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover"
                 />
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-accent/10 p-3 rounded-lg">
-                      <Icon name="Plane" className="text-accent" size={24} />
+                <CardContent className="p-6 flex-1 flex flex-col">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="bg-accent/10 p-2 rounded-lg">
+                      <Icon name={project.icon} className="text-accent" size={20} />
                     </div>
-                    <h4 className="text-2xl font-heading font-bold text-primary">Капитальный ремонт ВПП 1625м</h4>
+                    <h4 className="text-lg font-heading font-bold text-primary">{project.title}</h4>
                   </div>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Проект капитального ремонта взлётно-посадочной полосы включает полное усиление конструкции покрытия, модернизацию системы освещения и дренажа. Работы выполнены с соблюдением всех требований авиационной безопасности.
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed flex-1">
+                    {project.description}
                   </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <Icon name="Ruler" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Длина:</strong> 1625 метров</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Layers" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Работы:</strong> Усиление покрытия, дренаж</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Lightbulb" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Системы:</strong> Модернизация освещения</span>
-                    </div>
+                  <div className="space-y-2 pt-4 border-t border-border">
+                    {project.details.map((detail, idx) => (
+                      <div key={idx} className="flex items-start gap-2">
+                        <Icon name={detail.icon} size={14} className="text-accent mt-0.5 flex-shrink-0" />
+                        <span className="text-xs text-muted-foreground">
+                          <strong>{detail.label}:</strong> {detail.value}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </CardContent>
-              </div>
-            </Card>
-
-            <Card className="animate-fade-in overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <img 
-                  src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/7b1c8e8f-2ba5-4bfb-9eb7-c64f31e3b332.jpg"
-                  alt="Комплекс цехов"
-                  className="w-full h-full object-cover md:order-2"
-                />
-                <CardContent className="p-8 md:order-1">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-accent/10 p-3 rounded-lg">
-                      <Icon name="Factory" className="text-accent" size={24} />
-                    </div>
-                    <h4 className="text-2xl font-heading font-bold text-primary">Комплекс цехов 2.9 Га</h4>
-                  </div>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Генеральный план промышленной территории включает два производственных корпуса, развитую транспортную инфраструктуру и полный комплекс инженерных коммуникаций. Проект предусматривает оптимальную организацию производственных процессов.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <Icon name="Map" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Площадь:</strong> 2.9 гектара</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Building2" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Объекты:</strong> 2 производственных корпуса</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Route" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Инфраструктура:</strong> Дороги, коммуникации</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
-
-            <Card className="animate-fade-in overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <img 
-                  src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/89a5fdba-0fc5-4b49-91e3-b7ad12d38dfc.jpg"
-                  alt="Реабилитационный центр"
-                  className="w-full h-full object-cover"
-                />
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-accent/10 p-3 rounded-lg">
-                      <Icon name="Heart" className="text-accent" size={24} />
-                    </div>
-                    <h4 className="text-2xl font-heading font-bold text-primary">Реабилитационный центр</h4>
-                  </div>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Многофункциональное пространство для детской реабилитации с продуманным ландшафтным дизайном. Территория включает специализированные зоны реабилитации, игровые площадки и озеленённые участки с организацией доступной среды.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <Icon name="Activity" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Зоны:</strong> Реабилитация и терапия</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Smile" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Развлечения:</strong> Игровые площадки</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Trees" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Ландшафт:</strong> Зелёные зоны, доступная среда</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
-
-            <Card className="animate-fade-in overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <img 
-                  src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/b1f0926c-b53b-45a5-9e65-d47bf3b4afd5.jpg"
-                  alt="Образовательная экосистема"
-                  className="w-full h-full object-cover md:order-2"
-                />
-                <CardContent className="p-8 md:order-1">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-accent/10 p-3 rounded-lg">
-                      <Icon name="GraduationCap" className="text-accent" size={24} />
-                    </div>
-                    <h4 className="text-2xl font-heading font-bold text-primary">Образовательная экосистема</h4>
-                  </div>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Открытая образовательная среда с интеграцией природных элементов. Проект включает учебные зоны на открытом воздухе, экологические тропы, амфитеатр и ботанический сад для практических занятий.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <Icon name="BookOpen" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Обучение:</strong> Учебные зоны на воздухе</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Leaf" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Экология:</strong> Тропы и ботанический сад</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Users" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Мероприятия:</strong> Амфитеатр</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
-
-            <Card className="animate-fade-in overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <img 
-                  src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/c2f9b5a3-0afe-4b76-8b03-a184245fde9d.jpg"
-                  alt="Торговая зона"
-                  className="w-full h-full object-cover"
-                />
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-accent/10 p-3 rounded-lg">
-                      <Icon name="ShoppingBag" className="text-accent" size={24} />
-                    </div>
-                    <h4 className="text-2xl font-heading font-bold text-primary">Торговая зона</h4>
-                  </div>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Комплексная разработка коммерческой территории с организацией парковочного пространства на 50 машиномест. Проект предусматривает удобные пешеходные зоны и качественное благоустройство территории.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <Icon name="Store" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Назначение:</strong> Торговые площади</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Car" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Парковка:</strong> 50 машиномест</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Footprints" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Территория:</strong> Пешеходные зоны</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
-
-            <Card className="animate-fade-in overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <img 
-                  src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/e5a8f9d7-4c3b-4e2f-b8a1-d6f8e3c9a2b4.jpg"
-                  alt="Транспортная инфраструктура карьера"
-                  className="w-full h-full object-cover md:order-2"
-                />
-                <CardContent className="p-8 md:order-1">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-accent/10 p-3 rounded-lg">
-                      <Icon name="Truck" className="text-accent" size={24} />
-                    </div>
-                    <h4 className="text-2xl font-heading font-bold text-primary">Транспортная инфраструктура карьера</h4>
-                  </div>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Генплан транспортной сети для добывающего предприятия. Проектная документация включает 2 тома с детальной проработкой дорожной сети, разгрузочных зон и системы водоотведения.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <Icon name="Network" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Дороги:</strong> Транспортная сеть карьера</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Package" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Логистика:</strong> Разгрузочные зоны</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="FileText" size={16} className="text-accent" />
-                      <span className="text-sm"><strong>Документация:</strong> 2 тома</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
