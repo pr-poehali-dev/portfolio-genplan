@@ -498,6 +498,75 @@ const Index = () => {
               </CardContent>
             </Card>
 
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/1d7fba1f-ed76-4969-8959-229ee837b27d.png" 
+                    alt="Схема расположения цехов" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Схема расположения производственных зон</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/282d414e-3215-4817-957b-9102b831848c.png" 
+                    alt="План благоустройства с зонированием" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">План благоустройства с функциональным зонированием</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/e5d9f8b9-f34f-49c6-a7ce-abd90edf26ce.png" 
+                    alt="Схема нанесения разметки волейбольного поля" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Схема нанесения разметки волейбольного поля</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/a02219fc-2826-4b18-9264-901877a6faa8.png" 
+                    alt="Развивочная схема цехов" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Схема развития территории с размещением коммуникаций</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mb-12">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/491ef8ed-5287-460f-9f0a-286e81c75bda.png" 
+                  alt="Развивочная схема МАФ на детской площадке" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">Развивочная схема МАФ на детской площадке 3-7 лет с зонированием</p>
+                </div>
+              </CardContent>
+            </Card>
+
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card>
                 <CardContent className="p-0">
