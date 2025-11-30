@@ -195,43 +195,49 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
+                id: 'vpp',
                 title: 'Капитальный ремонт ВПП',
                 description: 'Капитальный ремонт ВПП 1625 м с усилением конструкции и модернизацией инфраструктуры',
                 icon: 'Plane',
                 result: 'Аэропорт РФ',
               },
               {
+                id: 'factory',
                 title: 'Проектирование цехов',
                 description: 'Комплексное проектирование цехов и логистической схемы на территории 2.9 Га',
                 icon: 'Factory',
                 result: 'Промышленный комплекс',
               },
               {
+                id: 'rehab',
                 title: 'Реабилитационный центр',
                 description: 'Многофункциональное пространство для реабилитации и развития детей',
                 icon: 'Heart',
                 result: 'Социальный объект',
               },
               {
+                id: 'edu',
                 title: 'Образовательная экосистема',
                 description: 'Создание современной образовательной экосистемы под открытым небом',
                 icon: 'GraduationCap',
                 result: 'Образование',
               },
               {
+                id: 'retail',
                 title: 'Торговая зона',
                 description: 'Комплексное освоение территории под розничную торговлю',
                 icon: 'ShoppingCart',
                 result: 'Ретейл',
               },
               {
+                id: 'quarry',
                 title: 'Транспортная инфраструктура карьера',
                 description: 'Комплексное проектирование транспортной инфраструктуры карьера «Восточный» (2 тома)',
                 icon: 'Truck',
                 result: 'Горная промышленность',
               },
             ].map((project, index) => (
-              <Card key={index} className="animate-fade-in hover:shadow-xl transition-all group">
+              <Card key={index} className="animate-fade-in hover:shadow-xl transition-all group cursor-pointer" onClick={() => scrollToSection(`project-${project.id}`)}>
                 <CardContent className="p-6">
                   <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                     <Icon name={project.icon as any} className="text-accent" size={28} />
@@ -242,12 +248,196 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="pt-4 border-t border-border">
+                  <div className="pt-4 border-t border-border flex items-center justify-between">
                     <span className="text-sm font-medium text-accent">{project.result}</span>
+                    <Icon name="ChevronRight" className="text-accent" size={20} />
                   </div>
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="project-vpp" className="py-24">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <Button onClick={() => scrollToSection('projects')} variant="outline" className="mb-8">
+              <Icon name="ArrowLeft" size={20} />
+              <span className="ml-2">Все проекты</span>
+            </Button>
+            
+            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
+              Капитальный ремонт взлётно-посадочной полосы
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Проектирование капитального ремонта ВПП длиной 1625 м с усилением конструкции покрытия и модернизацией инфраструктуры аэропорта
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/7e7b061b-86fd-415f-8ca6-0296ab72e1cd.jpeg" 
+                    alt="Фрагмент плана ВПП №1-2" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Фрагмент плана №1 (ПК00÷ПК2+77)</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/500fd4ec-4b0e-4956-a198-1152dfb61bf1.jpeg" 
+                    alt="Фрагмент плана ВПП №3-4" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Фрагмент плана №3 (ПК6+07÷ПК9+32)</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/af59fd81-af5d-4e18-a1be-b478faa1d244.jpeg" 
+                    alt="Фрагмент плана рулёжной дорожки №7" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Фрагмент плана №7 (рулёжная дорожка)</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/806baa2d-0647-4fd2-ac0e-c0fc49f32abc.jpeg" 
+                    alt="Фрагмент плана №6" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Фрагмент плана №6 (ПК15+79÷ПК16+25)</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mb-8">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/4d504bef-12b2-46e3-9dcb-c456580895d1.jpeg" 
+                  alt="Фрагмент плана №5" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">Фрагмент плана №5 (ПК12+59÷ПК15+79)</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+              Технико-экономические показатели
+            </h4>
+            
+            <Card>
+              <CardContent className="p-6">
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-3 px-4 font-semibold text-foreground">Наименование показателя</th>
+                        <th className="text-left py-3 px-4 font-semibold text-foreground">Единица измерения</th>
+                        <th className="text-right py-3 px-4 font-semibold text-foreground">Значение</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Длина ВПП</td>
+                        <td className="py-3 px-4">м</td>
+                        <td className="py-3 px-4 text-right font-medium">1 625</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Ширина ВПП</td>
+                        <td className="py-3 px-4">м</td>
+                        <td className="py-3 px-4 text-right font-medium">42</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Площадь покрытия ВПП</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">68 250</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Длина рулёжной дорожки</td>
+                        <td className="py-3 px-4">м</td>
+                        <td className="py-3 px-4 text-right font-medium">450</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Ширина рулёжной дорожки</td>
+                        <td className="py-3 px-4">м</td>
+                        <td className="py-3 px-4 text-right font-medium">18</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Площадь рулёжной дорожки</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">8 100</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Толщина асфальтобетонного покрытия</td>
+                        <td className="py-3 px-4">см</td>
+                        <td className="py-3 px-4 text-right font-medium">18</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Толщина основания из щебня</td>
+                        <td className="py-3 px-4">см</td>
+                        <td className="py-3 px-4 text-right font-medium">25</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4">Класс прочности покрытия (PCN)</td>
+                        <td className="py-3 px-4">-</td>
+                        <td className="py-3 px-4 text-right font-medium">55/R/B/W/T</td>
+                      </tr>
+                      <tr className="hover:bg-muted/50">
+                        <td className="py-3 px-4 font-semibold">Общая площадь проектирования</td>
+                        <td className="py-3 px-4">Га</td>
+                        <td className="py-3 px-4 text-right font-bold text-accent">7.64</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Ruler" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">1625 м</div>
+                  <div className="text-sm text-muted-foreground">Длина ВПП</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Layers" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">43 см</div>
+                  <div className="text-sm text-muted-foreground">Толщина покрытия</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="MapPin" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">7.64 Га</div>
+                  <div className="text-sm text-muted-foreground">Общая площадь</div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
