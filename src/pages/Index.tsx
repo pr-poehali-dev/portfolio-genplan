@@ -1287,6 +1287,123 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="project-quarry" className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <Button onClick={() => scrollToSection('projects')} variant="outline" className="mb-8">
+              <Icon name="ArrowLeft" size={20} />
+              <span className="ml-2">Все проекты</span>
+            </Button>
+            
+            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
+              Транспортная инфраструктура карьера «Восточный»
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Комплексное проектирование транспортной инфраструктуры карьера «Восточный» (2 тома) с проектированием дорожных заездов и съездов
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/28974f0f-a4af-4e64-9fd2-817a31f2db92.png" 
+                    alt="План автодорог и заездов проезда" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">План автодорог и заездов проезда — схема расположения дорожных знаков</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/50471bcf-0ac1-4832-8484-4d9388e0fc41.png" 
+                    alt="Схема криволинейного съезда" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Схема криволинейного съезда с детализацией конструкции</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+              Технические схемы и детализация
+            </h4>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/eade7b86-9146-4e9d-9b81-c32f638ddc01.png" 
+                    alt="Схема установки дорожных знаков с бортом" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Схема установки дорожных знаков с бортом</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/6e89208f-5ee2-4b2e-b0dc-af99cce28c96.png" 
+                    alt="Обозначение железной полосы железнодорожного пути" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Обозначение железной полосы железнодорожного пути и объездной дороги в Западной промзоне</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/ef09c5e0-656c-40db-ad08-36dbb56862b8.png" 
+                    alt="Таблица земляных масс" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Таблица земляных масс и расчеты объемов работ</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Truck" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Карьер</div>
+                  <div className="text-sm text-muted-foreground">Горная промышленность</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Route" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Дороги</div>
+                  <div className="text-sm text-muted-foreground">Транспортная сеть</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="FileStack" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">2 тома</div>
+                  <div className="text-sm text-muted-foreground">Комплексный проект</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="skills" className="py-24">
         <div className="container mx-auto px-6">
           <h3 className="text-4xl font-heading font-bold text-primary mb-12 text-center">
