@@ -726,6 +726,119 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="project-rehab" className="py-24">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <Button onClick={() => scrollToSection('projects')} variant="outline" className="mb-8">
+              <Icon name="ArrowLeft" size={20} />
+              <span className="ml-2">Все проекты</span>
+            </Button>
+            
+            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
+              Многофункциональный реабилитационный центр
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Проектирование многофункционального пространства для реабилитации и развития детей с комплексным благоустройством территории
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/1d7fba1f-ed76-4969-8959-229ee837b27d.png" 
+                    alt="Схема расположения функциональных зон" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Схема расположения функциональных зон на территории центра</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/282d414e-3215-4817-957b-9102b831848c.png" 
+                    alt="План благоустройства территории" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">План благоустройства территории с зонированием</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/e5d9f8b9-f34f-49c6-a7ce-abd90edf26ce.png" 
+                    alt="Схема нанесения разметки волейбольного поля" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Схема нанесения разметки волейбольного поля</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/a02219fc-2826-4b18-9264-901877a6faa8.png" 
+                    alt="План коммуникаций" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">План размещения инженерных коммуникаций</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mb-12">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/491ef8ed-5287-460f-9f0a-286e81c75bda.png" 
+                  alt="Развивочная схема детской площадки" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">Развивочная схема МАФ на детской площадке для детей 3-7 лет</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Heart" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Реабилитация</div>
+                  <div className="text-sm text-muted-foreground">Многофункциональный центр</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Users" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Для детей</div>
+                  <div className="text-sm text-muted-foreground">Развитие и социализация</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Trees" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Озеленение</div>
+                  <div className="text-sm text-muted-foreground">Комплексное благоустройство</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="skills" className="py-24">
         <div className="container mx-auto px-6">
           <h3 className="text-4xl font-heading font-bold text-primary mb-12 text-center">
