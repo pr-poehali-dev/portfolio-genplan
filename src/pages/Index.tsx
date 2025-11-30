@@ -485,6 +485,19 @@ const Index = () => {
               </Card>
             </div>
 
+            <Card className="mb-6">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/87fd304f-2f15-48b3-8a2a-0e04e2037095.jpeg" 
+                  alt="План озеленения территории" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">План озеленения территории с размещением зелёных насаждений</p>
+                </div>
+              </CardContent>
+            </Card>
+
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card>
                 <CardContent className="p-0">
