@@ -983,6 +983,79 @@ const Index = () => {
               </Card>
             </div>
 
+            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+              Конструктивные решения
+            </h4>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/29578d19-5359-4f14-892d-5af254d8b547.png" 
+                    alt="Узел 1: Устройство бортового камня между асфальтобетонным покрытием и пешеходным тротуаром" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 1: Устройство бортового камня между асфальтобетонным покрытием и пешеходным тротуаром</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/e7067eeb-940d-4a31-a860-53ef6041c166.png" 
+                    alt="Узел 2-3: Устройство бортового камня между покрытиями" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 2-3: Устройство бортового камня между покрытием детской (спортивной) площадки и газоном</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/6b2e5bd5-3048-47a0-b193-86dc9b854d31.png" 
+                    alt="Узел 4: Устройство бортового камня между газоном и местом для прыжков в длину" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 4: Устройство бортового камня между газоном и местом для прыжков в длину</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/c8e01527-0607-43ed-b403-499e66442071.png" 
+                    alt="Узел 5: Устройство пониженного бортового камня" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 5: Устройство пониженного бортового камня между асфальтобетонным покрытием и пешеходным тротуаром</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/bc427b96-b2b1-4422-92ab-ad5b655b488f.png" 
+                    alt="Узел 6: Устройство бортового камня между тротуаром и площадкой" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Узел 6: Устройство бортового камня между тротуаром и площадкой для памятника культурного наследия</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardContent className="p-6 text-center">
