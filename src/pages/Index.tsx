@@ -1056,6 +1056,58 @@ const Index = () => {
               </Card>
             </div>
 
+            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+              Технико-экономические показатели
+            </h4>
+            
+            <Card className="mb-8">
+              <CardContent className="p-6">
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-3 px-4 font-semibold text-foreground w-16">Поз.</th>
+                        <th className="text-left py-3 px-4 font-semibold text-foreground">Наименование</th>
+                        <th className="text-left py-3 px-4 font-semibold text-foreground">Ед.изм.</th>
+                        <th className="text-right py-3 px-4 font-semibold text-foreground">Кол.</th>
+                        <th className="text-right py-3 px-4 font-semibold text-foreground">%</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 text-center">1</td>
+                        <td className="py-3 px-4">Площадь участка в границах благ-ва</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">11 708</td>
+                        <td className="py-3 px-4 text-right font-medium">100</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 text-center">2</td>
+                        <td className="py-3 px-4">Площадь застройки, в том числе:</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">6 864,05</td>
+                        <td className="py-3 px-4 text-right font-medium">59</td>
+                      </tr>
+                      <tr className="border-b border-border hover:bg-muted/50">
+                        <td className="py-3 px-4 text-center">3</td>
+                        <td className="py-3 px-4 pl-8">Площадь покрытий</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">4 846,05</td>
+                        <td className="py-3 px-4 text-right font-medium">41</td>
+                      </tr>
+                      <tr className="hover:bg-muted/50">
+                        <td className="py-3 px-4 text-center">4</td>
+                        <td className="py-3 px-4 pl-8">Площадь озеленения</td>
+                        <td className="py-3 px-4">м²</td>
+                        <td className="py-3 px-4 text-right font-medium">2 018</td>
+                        <td className="py-3 px-4 text-right font-medium">18</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardContent className="p-6 text-center">
