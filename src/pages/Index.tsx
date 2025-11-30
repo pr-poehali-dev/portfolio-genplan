@@ -895,6 +895,123 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="project-edu" className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <Button onClick={() => scrollToSection('projects')} variant="outline" className="mb-8">
+              <Icon name="ArrowLeft" size={20} />
+              <span className="ml-2">Все проекты</span>
+            </Button>
+            
+            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
+              Образовательная экосистема под открытым небом
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Создание современной образовательной экосистемы под открытым небом с благоустройством территории, спортивными зонами и детскими площадками
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/7e52a34c-3f74-4285-bbac-693d8129523f.png" 
+                    alt="План благоустройства территории образовательной экосистемы" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">План благоустройства территории с зонированием</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/13f7ea9e-6fbb-43ff-8ff6-4b244a9a7e61.png" 
+                    alt="Генеральный план образовательной экосистемы" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Генеральный план с размещением спортивных и игровых зон</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mb-6">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/5d0b724c-2006-4735-bb7b-b0660026a47e.png" 
+                  alt="Генеральный план организации территории" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">Генеральный план организации территории М1:500</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <h4 className="text-2xl font-heading font-bold text-primary mb-6">
+              Детализация спортивных объектов
+            </h4>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/8251cd8f-9e0e-4983-93a9-b648993ce2ec.png" 
+                    alt="Разбивочная схема нанесения разметки на баскетбольное поле" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Разбивочная схема нанесения разметки на баскетбольное (волейбольное) поле</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/dac0e466-bc4c-4ca8-baa1-8f284abbce2f.png" 
+                    alt="Разбивочная схема МАФ на детской площадке" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Разбивочная схема МАФ на детской площадке начальных классов</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="GraduationCap" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Образование</div>
+                  <div className="text-sm text-muted-foreground">Современная экосистема</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Dumbbell" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Спорт</div>
+                  <div className="text-sm text-muted-foreground">Баскетбол и волейбол</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Users" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Детские зоны</div>
+                  <div className="text-sm text-muted-foreground">Игровые площадки</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="skills" className="py-24">
         <div className="container mx-auto px-6">
           <h3 className="text-4xl font-heading font-bold text-primary mb-12 text-center">
