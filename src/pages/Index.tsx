@@ -1137,6 +1137,104 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="project-retail" className="py-24">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <Button onClick={() => scrollToSection('projects')} variant="outline" className="mb-8">
+              <Icon name="ArrowLeft" size={20} />
+              <span className="ml-2">Все проекты</span>
+            </Button>
+            
+            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
+              Комплексное освоение территории под розничную торговлю
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Проектирование торговой зоны с полным комплексом работ по благоустройству территории и организации транспортной инфраструктуры
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/e85f189e-4546-465c-9059-66fab42d6509.png" 
+                    alt="План демонтажа М1:500" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">План демонтажа М1:500 - ранее возводившиеся части зданий</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-0">
+                  <img 
+                    src="https://cdn.poehali.dev/files/2bb1b0a6-1953-4f45-95fd-0cb180517796.png" 
+                    alt="Разбивочные планы и план вертикальной планировки М1:500" 
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">Разбивочные планы и план вертикальной планировки М1:500</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="mb-6">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/4d20f5bf-17c7-48f2-a857-b1bc75268f74.png" 
+                  alt="Картограмма земляных масс М1:500" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">Картограмма земляных масс М1:500</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="mb-12">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/314517be-4a2d-4f3a-8570-86f767fe8f51.png" 
+                  alt="Планы дорожного движения и транспортная инфраструктура" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground">Планы дорожного движения и транспортная инфраструктура на территории</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="ShoppingCart" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Ретейл</div>
+                  <div className="text-sm text-muted-foreground">Торговая зона</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="Car" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Транспорт</div>
+                  <div className="text-sm text-muted-foreground">Инфраструктура</div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardContent className="p-6 text-center">
+                  <Icon name="MapPin" className="text-accent mx-auto mb-3" size={32} />
+                  <div className="text-2xl font-bold text-primary mb-1">Благоустройство</div>
+                  <div className="text-sm text-muted-foreground">Комплексное освоение</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="skills" className="py-24">
         <div className="container mx-auto px-6">
           <h3 className="text-4xl font-heading font-bold text-primary mb-12 text-center">
