@@ -309,12 +309,26 @@ const Index = () => {
               <span className="ml-2">Все проекты</span>
             </Button>
             
-            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Капитальный ремонт взлётно-посадочной полосы
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Капитальный ремонт ВПП 1625 м с усилением конструкции и модернизацией инфраструктуры
-            </p>
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/a9ac08f6-51aa-4ae1-b10a-19c50e0bb8b5.jpg" 
+                alt="Капитальный ремонт ВПП" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="inline-block bg-accent/90 px-4 py-2 rounded-full mb-4">
+                    <span className="text-sm font-semibold">Аэропорт РФ</span>
+                  </div>
+                  <h3 className="text-4xl font-heading font-bold mb-3">
+                    Капитальный ремонт взлётно-посадочной полосы
+                  </h3>
+                  <p className="text-lg text-white/90 max-w-3xl">
+                    Капитальный ремонт ВПП 1625 м с усилением конструкции и модернизацией инфраструктуры
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Card className="bg-primary/5 border-primary/20">
@@ -552,12 +566,26 @@ const Index = () => {
               <span className="ml-2">Все проекты</span>
             </Button>
             
-            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Проектирование промышленных цехов
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Комплексное проектирование цехов и логистической схемы на территории 2,9 Га
-            </p>
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/7b1c8e8f-2ba5-4bfb-9eb7-c64f31e3b332.jpg" 
+                alt="Проектирование цехов" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="inline-block bg-accent/90 px-4 py-2 rounded-full mb-4">
+                    <span className="text-sm font-semibold">Промышленный комплекс</span>
+                  </div>
+                  <h3 className="text-4xl font-heading font-bold mb-3">
+                    Проектирование промышленных цехов
+                  </h3>
+                  <p className="text-lg text-white/90 max-w-3xl">
+                    Комплексное проектирование цехов и логистической схемы на территории 2,9 Га
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Card className="bg-primary/5 border-primary/20">
@@ -835,12 +863,26 @@ const Index = () => {
               <span className="ml-2">Все проекты</span>
             </Button>
             
-            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Многофункциональный реабилитационный центр
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Многофункциональное пространство для реабилитации и развития детей
-            </p>
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/89a5fdba-0fc5-4b49-91e3-b7ad12d38dfc.jpg" 
+                alt="Реабилитационный центр" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="inline-block bg-accent/90 px-4 py-2 rounded-full mb-4">
+                    <span className="text-sm font-semibold">Социальный объект</span>
+                  </div>
+                  <h3 className="text-4xl font-heading font-bold mb-3">
+                    Многофункциональный реабилитационный центр
+                  </h3>
+                  <p className="text-lg text-white/90 max-w-3xl">
+                    Многофункциональное пространство для реабилитации и развития детей
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Card className="bg-primary/5 border-primary/20">
@@ -1159,12 +1201,26 @@ const Index = () => {
               <span className="ml-2">Все проекты</span>
             </Button>
             
-            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Образовательная экосистема под открытым небом
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Создание современной образовательной экосистемы под открытым небом
-            </p>
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/b1f0926c-b53b-45a5-9e65-d47bf3b4afd5.jpg" 
+                alt="Образовательная экосистема" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="inline-block bg-accent/90 px-4 py-2 rounded-full mb-4">
+                    <span className="text-sm font-semibold">Образование</span>
+                  </div>
+                  <h3 className="text-4xl font-heading font-bold mb-3">
+                    Образовательная экосистема под открытым небом
+                  </h3>
+                  <p className="text-lg text-white/90 max-w-3xl">
+                    Создание современной образовательной экосистемы под открытым небом
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Card className="bg-primary/5 border-primary/20">
@@ -1485,12 +1541,26 @@ const Index = () => {
               <span className="ml-2">Все проекты</span>
             </Button>
             
-            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Комплексное освоение территории под розничную торговлю
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Проектирование торговой зоны с полным комплексом работ
-            </p>
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/c2f9b5a3-0afe-4b76-8b03-a184245fde9d.jpg" 
+                alt="Торговая зона" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="inline-block bg-accent/90 px-4 py-2 rounded-full mb-4">
+                    <span className="text-sm font-semibold">Ретейл</span>
+                  </div>
+                  <h3 className="text-4xl font-heading font-bold mb-3">
+                    Комплексное освоение территории под розничную торговлю
+                  </h3>
+                  <p className="text-lg text-white/90 max-w-3xl">
+                    Проектирование торговой зоны с полным комплексом работ
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <Card className="bg-primary/5 border-primary/20">
@@ -1715,12 +1785,26 @@ const Index = () => {
               <span className="ml-2">Все проекты</span>
             </Button>
             
-            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Транспортная инфраструктура карьера «Восточный» — Том 1
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Обеспечение транспортной доступности участка вскрышных работ Западной траншеи
-            </p>
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/e5a8f9d7-4c3b-4e2f-b8a1-d6f8e3c9a2b4.jpg" 
+                alt="Транспортная инфраструктура карьера" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="inline-block bg-accent/90 px-4 py-2 rounded-full mb-4">
+                    <span className="text-sm font-semibold">Горная промышленность</span>
+                  </div>
+                  <h3 className="text-4xl font-heading font-bold mb-3">
+                    Транспортная инфраструктура карьера «Восточный» — Том 1
+                  </h3>
+                  <p className="text-lg text-white/90 max-w-3xl">
+                    Обеспечение транспортной доступности участка вскрышных работ Западной траншеи
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <Card className="bg-primary/5 border-primary/20 mb-8">
               <CardContent className="p-6">
@@ -1818,12 +1902,26 @@ const Index = () => {
               <span className="ml-2">Все проекты</span>
             </Button>
             
-            <h3 className="text-4xl font-heading font-bold text-primary mb-4">
-              Транспортная инфраструктура карьера «Восточный» — Том 2
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Создание единой транспортной сети для доступности ключевых объектов карьера
-            </p>
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-2xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/aeceb9ca-0a0e-4df5-8c7c-552f235d5efc/files/e5a8f9d7-4c3b-4e2f-b8a1-d6f8e3c9a2b4.jpg" 
+                alt="Транспортная инфраструктура карьера Том 2" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 text-white">
+                  <div className="inline-block bg-accent/90 px-4 py-2 rounded-full mb-4">
+                    <span className="text-sm font-semibold">Горная промышленность</span>
+                  </div>
+                  <h3 className="text-4xl font-heading font-bold mb-3">
+                    Транспортная инфраструктура карьера «Восточный» — Том 2
+                  </h3>
+                  <p className="text-lg text-white/90 max-w-3xl">
+                    Создание единой транспортной сети для доступности ключевых объектов карьера
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <Card className="bg-accent/5 border-accent/20 mb-8">
               <CardContent className="p-6">
